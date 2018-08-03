@@ -51,38 +51,38 @@ The default options can be overwritten by also passing "user_defined_settings":
     
 The supported values of each user defined setting is as follows:
 
-animationOnDestroy:
-    false: The gplusTip container will simply be removed from the DOM
-    'fadeOut': the container will fadeOut over 500ms, and then be removed
-    'slideUp': the container will slideUp over 500ms, and then be removed
+    animationOnDestroy:
+        false: The gplusTip container will simply be removed from the DOM
+        'fadeOut': the container will fadeOut over 500ms, and then be removed
+        'slideUp': the container will slideUp over 500ms, and then be removed
 
-arrowOffset:
-    <number>: The number of pixel to offset the container and arrow from the event which calls gplusTip() in callback
+    arrowOffset:
+        <number>: The number of pixel to offset the container and arrow from the event which calls gplusTip() in callback
   
-background:
-    <color> or <image>: The background for the container
+    background:
+        <color> or <image>: The background for the container
   
-createCallback:
-    <function>: A function to call right after the tooltip is rendered
+    createCallback:
+        <function>: A function to call right after the tooltip is rendered
   
-delay:
-    <number>: The milliseconds to delay before rendering the tooltip
+    delay:
+        <number>: The milliseconds to delay before rendering the tooltip
 
-destroyCallback:
-    <function>: A function to call right after the tooltip is removed from the DOM
+    destroyCallback:
+        <function>: A function to call right after the tooltip is removed from the DOM
 
-destroyOnMouseleave:
-    <boolean>: If tooltip is moused over, it will be destroyed on mouseleave (if set to true, otherwise not destroyed)
+    destroyOnMouseleave:
+        <boolean>: If tooltip is moused over, it will be destroyed on mouseleave (if set to true, otherwise not destroyed)
 
-filterPosts:
-    <array>: If included, only posts which correspond to the 11-character post_id (found at end of URL when clicking on arrow at upper right of a post) will be used to populate the tooltip
+    filterPosts:
+        <array>: If included, only posts which correspond to the 11-character post_id (found at end of URL when clicking on arrow at upper right of a post) will be used to populate the tooltip
 
-hiddenSections:
-    <array>: If included in the array, these sections will be excluded in the tooltip output. Possible values are: "title", "published", "content", "url", "replies", "plusones", "resharers"
+    hiddenSections:
+        <array>: If included in the array, these sections will be excluded in the tooltip output. Possible values are: "title", "published", "content", "url", "replies", "plusones", "resharers"
 
-limit:
-  <number>: Set the number of returned records to display in the tooltip, otherwise 5 records will be included in output (-1 for all)
+    limit:
+        <number>: Set the number of returned records to display in the tooltip, otherwise 5 records will be included in output (-1 for all)
 
-maxWidth:
-    <number>: relative to window width, where window width = 1, will be constrained to be between .15 and .45
+    maxWidth:
+        <number>: relative to window width, where window width = 1, will be constrained to be between .15 and .45
 
