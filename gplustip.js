@@ -22,7 +22,9 @@
             w = $(window),
             ww = w.width(),
             wh = $(window).height(),
-            font_awesome_version;
+            font_awesome_version,
+            sign,
+            alternator;
 
         // Constrain size of container
         if (settings.maxWidth > .45) {
@@ -266,7 +268,9 @@
                     containerXAdjustment = 1;  
                 }
 
-                xMult = -1 * Math.sign(Math.cos(((2 * quadrant - 1) * Math.PI) / 4));
+                alternator = Math.cos(((2 * quadrant - 1) * Math.PI) / 4);
+                sign = (typeof(Math.sign(alternator)) === 'number') ? Math.sign(alternator) : 1;
+                xMult = -1 * sign;
                 xAdjustment = (xMult * settings.arrowOffset) + (tipXAdjustment * obj_width) + (xMult * containerXAdjustment * arrow_width);
                 tip_coordinates.x += xAdjustments;
                 
